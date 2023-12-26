@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -16,10 +17,87 @@
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text">
-                O maior evento de tecnoligia do Brasil começa em 10d 12h 20m 15s
+                O maior evento de tecnoligia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Allianz parque - Barra funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        22/12/2023 às 15:41hs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta a sua vaga
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">
+                    Perferendis aut voluptatem sed quia recusandae dignissimos obcaecati, laudantium alias dolore, ad repudiandae illo! Suscipit praesentium consectetur amet ut maxime magni. Nisi.
+                    Nostrum fuga voluptas magnam accusamus amet iure laboriosam pariatur, necessitatibus perspiciatis sapiente itaque non ab cupiditate, soluta, labore reprehenderit quos similique odit?
+                    Laborum iure temporibus facere nemo exercitationem commodi suscipit omnis neque, voluptatibus explicabo error, vel, labore quasi ab consequatur adipisci. Ad, modi dicta.
+                </p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="front-end">
+        </div>
+    </section>
+
+    <section class="event event--ui-ux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">
+                    Dicta numquam et vitae perspiciatis at totam, alias, enim neque laudantium repellendus deserunt quaerat sint rem iste laboriosam, voluptatibus minima illo nihil.
+                    Distinctio et eveniet quia quod, expedita exercitationem labore facilis laborum modi at vero hic quidem repellat reprehenderit non cumque minima officiis. Velit.
+                    Dolor delectus tenetur officiis, nesciunt inventore perspiciatis aliquid doloribus explicabo molestias a architecto dicta non dolorem suscipit ratione, quasi facilis quas. Incidunt!
+                </p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">
+                    Vel, enim? Praesentium mollitia id, sint ad voluptatibus, aut animi minus commodi quibusdam eaque error cupiditate cum debitis quae asperiores unde explicabo!
+                    Consectetur facere consequuntur quam modi iusto eligendi ea architecto quas necessitatibus iste. Hic ipsa praesentium culpa assumenda sint enim, dolore suscipit odit.
+                    Eos deleniti quibusdam excepturi voluptate quidem expedita odio et perspiciatis, fugiat sequi corporis maiores. Officia a sit, laboriosam quis molestiae consequuntur maiores!
+                </p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="Data Science">
+        </div>
+    </section>
+
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Backend</h2>
+                <p class="event__details__description">
+                    Dicta numquam et vitae perspiciatis at totam, alias, enim neque laudantium repellendus deserunt quaerat sint rem iste laboriosam, voluptatibus minima illo nihil.
+                    Distinctio et eveniet quia quod, expedita exercitationem labore facilis laborum modi at vero hic quidem repellat reprehenderit non cumque minima officiis. Velit.
+                    Dolor delectus tenetur officiis, nesciunt inventore perspiciatis aliquid doloribus explicabo molestias a architecto dicta non dolorem suscipit ratione, quasi facilis quas. Incidunt!
+                </p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="back-end">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
